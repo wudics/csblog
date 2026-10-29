@@ -78,7 +78,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">meta version</span><br><span class="line">Metamod-r v1.3.0.131, API (5:13)</span><br><span class="line">Metamod-r build: 18:51:02 Jul 11 2022</span><br><span class="line">Metamod-r from: https://github.com/theAsmodai/metamod-r/commit/adc9414</span><br></pre></td></tr></table></figure>
 
 <h2 id="安装amxmodx"><a href="#安装amxmodx" class="headerlink" title="安装amxmodx"></a>安装amxmodx</h2><p>这里需要同时下载amxmodx-1.9.0-git5294-base-linux.tar.gz和amxmodx-1.9.0-git5294-cstrike-linux.tar.gz</p>
-<p>首先把<code>amxmodx-1.9.0-git5294-base-linux</code>解压得到的<code>addons</code>文件夹上传到<code>cstrike</code>目录下，然后把<code>amxmodx-1.9.0-git5294-cstrike-linux</code>解压得到的<code>addons</code>文件夹也上传到<code>cstrike</code>目录下即可。</p>
+<p>首先把<code>amxmodx-1.9.0-git5294-base-linux</code>解压得到的<code>addons</code>文件夹上传到<code>cstrike</code>目录下，然后把<code>amxmodx-1.9.0-git5294-cstrike-linux</code>解压得到的<code>addons</code>文件夹也上传到<code>cstrike</code>目录下。</p>
+<p>接着在Metamod中注册AMXX，即编辑<code>cstrike/addons/metamod/plugins.ini</code>（如果没有此文件就新建），添加下面这一行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">linux addons/amxmodx/dlls/amxmodx_mm_i386.so</span><br></pre></td></tr></table></figure>
+
 <h2 id="安装regamedll"><a href="#安装regamedll" class="headerlink" title="安装regamedll"></a>安装regamedll</h2><p>下载regamedll-bin-5.21.0.575.zip解压后，将<code>bin/linux32/cstrike</code>文件夹的内容，上传到服务器的<code>cstrike</code>目录替换原有文件即可。</p>
 <h2 id="安装reapi"><a href="#安装reapi" class="headerlink" title="安装reapi"></a>安装reapi</h2><p>下载reapi-bin-5.22.0.254.zip解压后，将<code>addons/amxmodx</code>文件夹的内容上传到服务器的<code>cstrike/addons/amxmodx</code>目录。</p>
 <p>然后进入<code>cstrike/addons/amxmodx/scripting</code>目录，执行如下命令编译reapi插件。</p>
